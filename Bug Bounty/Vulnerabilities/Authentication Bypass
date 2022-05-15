@@ -30,30 +30,3 @@
    c) Use authentication based on strong tokens such as json web token mechanism.
    d) Use authentication based on encrypted data which can be AES for example.
     
- 
-2.No Rate-Limit
-3.XSS
-4.CSRF
-16.SSRF
-5.CORS
-
-6.Subdomain Takeovers
-7.HTML Injection
-12.Host Header Injection
-21.XML Injection
-8.Click Jacking
-9.File Inclusion
-11.SQL Injection
-19.Command Injection
-10.Broken Link Hijacking
-
-
-13.URL Redirection
-14.Parameter Tempering
-15.Missingsuffient SPF Record;
-17.Critical File Found
-18.Source Code Discloser
-20.File Uploading
-22.EXIF Data Exposure
-23.IDOR
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . . 
