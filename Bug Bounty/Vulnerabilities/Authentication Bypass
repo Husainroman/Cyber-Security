@@ -1,6 +1,6 @@
-                                                      My Vulnerabilities List
-
-1.Authentication Bypass
+                                                   1.  Authentication Bypass
+                                                   
+                                                   
                 OTP BYPASS
     a) Login through OTP, entering the wrong otp and manupulating the Response 
     b) Checking whether the otp's are right or wrong improperly leads to bypass
