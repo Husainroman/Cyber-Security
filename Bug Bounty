@@ -1,6 +1,36 @@
                                                       My Vulnerabilities List
 
 1.Authentication Bypass
+                OTP BYPASS
+    a) Login through OTP, entering the wrong otp and manupulating the Response 
+    b) Checking whether the otp's are right or wrong improperly leads to bypass
+    c) Verifying at the client side only & taking decision is dangerous
+    d) Only, allowing logging into base on true/false condition is dangerous
+    
+               CAPTCHA BYPASS
+    a) Using Response Manupulation
+    b) verifying at the client side only and taking decisions is a very very dangerous for any application
+    
+               ACCOUNT TAKEOVER based on user id
+    a) Mapping user as per uid,gid and other params like user_id,user=,etc is good
+    b) Until proper checks and access control is in place
+    c) Logging into other users account by just using their userid's
+                
+                ACCOUNT TAKEOVER DUE TO  OTP EXPOSURE
+    a) Some web applications reveal the right otp or verification code in the response itself
+    
+                ACCOUNT TAKEOVER DUE TO  2FA Logic Flaw
+    a) Doing an email account takeover of anyone, due to logic flaw on the website
+
+
+1.1                          Mitigations 
+
+   a) Do not rely on client side only make the checks at the server side.
+   b) Verifying the client side and taking decisions is very very dangerous.
+   c) Use authentication based on strong tokens such as json web token mechanism.
+   d) Use authentication based on encrypted data which can be AES for example.
+    
+ 
 2.No Rate-Limit
 3.XSS
 4.CSRF
