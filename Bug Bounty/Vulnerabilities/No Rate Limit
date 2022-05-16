@@ -1,0 +1,42 @@
+                               Methods to find No Rate Limit Vulnerability
+    
+             No Rate-Limit on Account Creation
+                a) we will send X number of simultaneous requests to the server and the server will act on each request
+                b) thus by making X number of email account onto the website.
+                c) no validation or limiting the request and taking decisions is very dangerous for an server.
+                
+             No Rate-limit leads to account takeover
+                a) we will send X number of simultaneous requests to the server and the server will act on each request
+                b) Thus by sending x number of a right OTP tokens or password we can successfully crack the code and
+                   bypass the authentication 
+                c) no validation or limiting the request and taking decisions by the server is very dangerous   
+                
+             No Rate-limit on OTP verify leads to Account takeover 
+                a) we will send X number of simultaneous requests to the server and the server will act on each request
+                b) Thus by sending x number of a right OTP tokens or password we can successfully crack the code and
+                   bypass the authentication 
+                c) no validation or limiting the request and taking decisions by the server is very dangerous   
+                
+             No-Rate limit protection bypass-1 
+                a) we will send X number of simultaneous requests to the server and the server will act on each request
+                b) We will do the bypass for No-Rate limit using race conditions and IP address.
+                c) Thus by sending x number of a right OTP tokens or password we can successfully crack the code and
+                   bypass the authentication 
+                d) no validation or limiting the request and taking decisions by the server is very dangerous
+                
+             No-Rate limit protection bypass-2 
+                a) we will send X number of simultaneous requests to the server and the server will act on each request
+                b) we will do bypass for no rate-limit using X-Forwarded-Host
+                c) Thus by sending x number of a right OTP tokens or password we can successfully crack the code and
+                   bypass the authentication 
+                d) no validation or limiting the request and taking decisions by the server is very dangerous
+                
+                
+                                                           Mitigations
+                                                           
+                1) Always limit the requests by any user
+                2) Verifying at the client side only and taking decisions is dangerous
+                3) Rate-limit users based on IP's , NAH!
+                4) Number of attempts for an account at server side
+                
+               
