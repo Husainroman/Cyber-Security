@@ -1,0 +1,35 @@
+                                                        Cross Site Request Forgery
+                                                        
+      Remember CSRF onn login/logout is not sensitive and out of scope 
+      Checking for pages where sensitive data is stored and sensitive action can be performed
+      Making a CSRF PoC and updating the data on account 
+      No input validation or sanitization is dangerous 
+      
+      
+          CSRF to account takeover
+            a) CSRF to account takeover by changing email id and password 
+            b) Getting complete acccess of the account, permanent lockout of user 
+            
+          CSRF by Request Method 
+            a) Some appplication validate based on POST methods for submitting user data for csrf 
+            b) Change the method from POST to GET or vice versa and win !!
+            
+          Chaining CSRF with XSS 
+            a) We are unable to perform csrf due to protection in place and all our request get invalidate
+            b) We will get the csrf_token + cookie with help of XSS 
+            c) Utilising the csrf_token protection token to further make a CSRF attack 
+            d) Thus, by chaining XSS, we can do bypass the CSRF Protection  
+            e) Fixing the csrf but not other vulns through which token can be leaked is dangerous 
+           
+          CSRF bonus tricks 
+            a) Remove Tokens :-
+               Some applications validate based on if the token parameter is present in the cookie rather than the correct value.
+               So if you just try to remove the token and submit the request then it is a win win for you
+            b) Bypass csrf protection by identifying the csrf_tokens are static and doesn't change keeping satic csrf, xsrf tokens in dangerous
+            c) Some application validate based on token is present of same entropy or not. Change the CSRF token but keep the length and entropy same and win !!
+            
+                                        Mitigations
+                    
+            a) Check for all request thats come to a server, if coming from a legitimate source
+            b) Always use rolling/dynamic tokens to protect from CSRF 
+            c) Authenticate a request by some kind of protection which can be xsrf, csrf tokens.
