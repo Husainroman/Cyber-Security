@@ -1,0 +1,80 @@
+                                                                      Three important Cases for CORS 
+       
+
+                                                                 case-1 best case 
+Request  :                                                                                                                           Response :
+
+Origin: attacker.com                                                                                                            Access-control-allow-origin: attacker.com
+                                                                                                                                          Access-control-allow-credentials: true
+
+
+                                                                 case-2 best case 
+Request  :                                                                                                                           Response :
+
+Origin: attacker.com                                                                                                            Access-control-allow-origin: null
+                                                                                                                                          Access-control-allow-credentials: true
+
+
+                                                                 case-3 bad implimentation not exploitable 
+Request  :                                                                                                                           Response :
+
+Origin: attacker.com                                                                                                            Access-control-allow-origin: *
+                                                                                                                                          Access-control-allow-credentials: true
+
+
+                                 Exploitation of CORS - Reflection Origin
+
+{
+
+"url":"https://www.synack.com/sensitive-details/",
+"credentials":"true",
+"type":"reflection type",
+"origin":"https://evil.com",
+"status_code":200
+
+}
+
+
+
+                                 Exploitation of CORS - Prefix Match
+
+{
+
+"url":"https://www.synack.com/sensitive-details/",
+"credentials":"true",
+"type":"prefix_match",
+"origin":"https://www.synack.com.evil.com",
+"status_code":200
+
+}
+
+
+
+                                 Exploitation of CORS - Suffix Match
+
+{
+
+"url":"https://www.synack.com/sensitive-details/",
+"credentials":"true",
+"type":"suffix_match",
+"origin":"https://www.evilsynack.com",
+"status_code":200
+
+}
+
+
+                         
+                                             Mitigations
+
+
+a) SOP ! Same Origin Policy 
+b) Do not trust any arbitrary origin and communicate with it !!
+
+
+
+
+
+
+
+
+
