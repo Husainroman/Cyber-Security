@@ -1,0 +1,11 @@
+                                                                Clickjacking attack
+
+Steps to produce : 
+
+   Goto  securityheaders.com 
+
+   Enter the website url  and check for X-Frame-Options
+
+   If X-Frame-Options is missing. Then there is clickjacking available
+
+   To exploit goto this github link :  https://github.com/shifa123/clickjackingpoc
