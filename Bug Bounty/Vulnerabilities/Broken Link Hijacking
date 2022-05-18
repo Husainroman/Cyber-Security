@@ -1,0 +1,11 @@
+                                                            Broken Link Hijacking 
+
+
+This vulnerability exists when any web application includes file resources, scripts or any type of data from another Web server,
+and the links are not active anymore and available to claim.
+
+
+Tool for BLH 
+
+dead link checker
+
