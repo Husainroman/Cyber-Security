@@ -1,0 +1,7 @@
+                                                                  HTML Injection Finding
+
+Steps :
+
+      a) Find a input parameter  either GET based or POST based
+      b) If your input reflect back to you	on web page there may be HTMLi
+      c) Execute any HTML code , if u succeed to execute any HTML code there . Then there is HTMLi 
