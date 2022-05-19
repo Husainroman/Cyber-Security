@@ -1,0 +1,43 @@
+                                   How to Hunt URL Redirection
+
+
+Find any url parameter having some kind of
+tendency to redirect anywhere
+
+URL Redirection on Path Fragments
+example – any.com/payloads
+any.com/bing.com
+any.com//bing.com
+
+Common Parameter List :
+
+dest
+redirect
+uri 
+path
+continue 
+url
+window 
+to
+out
+view 
+dir
+show 
+navigation
+Open 
+url 
+file
+val
+validate 
+domain
+callback 
+return
+page 
+feed
+host 
+port 
+next
+data
+reference 
+site
+html
