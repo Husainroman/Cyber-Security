@@ -1,0 +1,130 @@
+What we have learnt till now in Shodan
+Installation of Shodan in Python Environment :
+
+$ easy_install shodan
+
+
+
+BlackArch Environment :
+
+# pacman -S python-shodan
+
+
+
+To setup API Token :
+
+shodan init<YOUR_API_KEY>
+
+
+
+Shodan Info of your Account :
+
+$ shodan info
+
+
+
+To check version of Shodan :
+
+$ shodan version
+
+
+
+Count number of result we are going to get from search query : 
+
+$ shodan count openssh
+
+
+
+To download search results : 
+
+shodan download bigipfile bigip
+
+
+
+This was the quick recap of Shodan. We will dive more deeper in Shodan.
+
+
+
+
+
+
+
+
+Host Enumeration :
+
+To get information about any ip address
+
+$ shodan host 1.1.1.1
+
+
+
+Shodan parse dataset :
+
+$ shodan myip
+
+you can parse a file that was generated using download command.
+
+$ shodan parse [OPTIONS] <filename>
+
+
+
+Shodan serach query :
+
+$ shodan search -h
+
+$ shodan search [OPTIONS] <search query>
+
+
+
+Shodan Scan command :
+
+$ shodan scan -h
+
+$ shodan scan [OPTIONS] COMMAND [ARGS]...
+
+
+
+Shodan Stats : 
+
+$ shodan stats -h
+
+$ shodan stats [OPTIONS] <search query>
+
+
+
+Shodan GUI : 
+
+https://www.shodan.io/
+
+
+
+Shodan Report Generation : 
+
+
+
+
+Shodan Images : 
+
+Searchable images gallery of screenshots from crawled devices.
+
+
+
+
+Shodan Exploits : A search engine that looks for exploits across a variety of vulnerability databases at once.
+
+
+
+https://exploits.shodan.io/welcome
+
+
+
+
+Shodan Extension :  https://chrome.google.com/webstore/detail/shodan/jjalcfnidlmpjhdfepjhjbhnhkbgleap
+
+
+
+This was the quick recap of Shodan.
+
+Best wishes,
+
+Rohit Gautam & Shifa Cyclewala.
